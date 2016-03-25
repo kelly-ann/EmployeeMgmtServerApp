@@ -11,7 +11,7 @@ import com.kelly_ann.employeemgmt.domain.Employee;
 //the @Default annotation tells JBoss that this is the default EmployeeDAO interface implementation.
 @Stateless
 @Default
-@ProductionDAO
+@ProductionDAOP
 public class EmployeeDAOProductionImpl implements EmployeeDAO {
 	
 	@Override
