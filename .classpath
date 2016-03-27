@@ -17,5 +17,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/Kelly-Ann/Desktop/Nerdiness/Java/VirtualPairProgrammers - Java EE and WildFly-JBoss Module 1/PracticalsAndCode/End of chapter workspaces/Chapter 06/EmployeeManagementServerApplication/lib/jboss-javaee-all-7.0-1.0.3.Final.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

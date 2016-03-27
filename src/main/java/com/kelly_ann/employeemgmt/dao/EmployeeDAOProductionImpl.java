@@ -6,12 +6,13 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.enterprise.inject.Default;
 
+import com.kelly_ann.employeemgmt.annotation.ProductionDAO;
 import com.kelly_ann.employeemgmt.domain.Employee;
 
 //the @Default annotation tells JBoss that this is the default EmployeeDAO interface implementation.
 @Stateless
 @Default
-@ProductionDAOP
+@ProductionDAO
 public class EmployeeDAOProductionImpl implements EmployeeDAO {
 	
 	@Override
