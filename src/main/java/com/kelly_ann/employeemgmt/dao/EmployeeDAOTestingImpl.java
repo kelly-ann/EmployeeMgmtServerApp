@@ -10,7 +10,7 @@ import com.kelly_ann.employeemgmt.annotation.TestingDAO;
 import com.kelly_ann.employeemgmt.domain.Employee;
 
 // the @Alternative annotation tells JBoss that this is not the default EmployeeDAO interface implementation.
-//@Stateless - this class doesn't need to be and EJB so this is optional.
+//@Stateless //- this class doesn't need to be and EJB so this is optional.
 @Alternative
 @TestingDAO
 public class EmployeeDAOTestingImpl implements EmployeeDAO {

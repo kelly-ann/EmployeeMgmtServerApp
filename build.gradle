@@ -15,7 +15,7 @@ apply plugin: 'java'
 //apply plugin: 'ear'
  
 // list the tasks to be run
-defaultTasks 'clean', 'compileJava', 'test', 'deployToAppServer'
+defaultTasks 'clean', 'compileJava', 'test', 'jar', 'deployToAppServer'
 //defaultTasks 'printProps'  //used for debugging
  
 // testing framework
@@ -50,7 +50,9 @@ repositories {
 
 dependencies {
     // used at compile time
+	compile 'javax:javaee-web-api:7.0'
     compile 'org.jboss.spec:jboss-javaee-7.0:1.0.3.Final'
+    compile 'org.apache.derby:derbyclient:10.12.1.1'
 
     // used at testing compile time
     testCompile 'junit:junit:4.12'

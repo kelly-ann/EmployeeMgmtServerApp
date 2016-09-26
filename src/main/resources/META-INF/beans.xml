@@ -6,9 +6,9 @@
        bean-discovery-mode="all">
 
 <!-- All alternative beans must be listed in this file. -->
-
+ 
 	<alternatives>
 		<class>com.kelly_ann.employeemgmt.dao.EmployeeDAOTestingImpl</class>
 	</alternatives>
-       
+
 </beans>

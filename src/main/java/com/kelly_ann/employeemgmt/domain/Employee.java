@@ -2,16 +2,30 @@ package com.kelly_ann.employeemgmt.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 // serializable means the class can be transmitted across the network.
 @SuppressWarnings("serial")
+@Entity		//required by JPA (part 1 of 3)
 public class Employee implements Serializable {
 	
+	//@Id says that this field is the unique/primary key of the Entity db object.
+	@Id		//required by JPA (part 2 of 3)
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String jobRole;
 	private int salary;
 	
-	// constructor
+	// constructors
+	public Employee() {
+		//no-arg constructor - required by JPA (part 3 of 3)
+	}
+	
 	public Employee(String firstName, String lastName, String jobRole, int salary) {
 		super();
 		this.firstName = firstName;
